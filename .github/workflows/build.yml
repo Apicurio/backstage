@@ -1,0 +1,15 @@
+name: Build
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+      - name: build
+        run: yarn && yarn tsc && yarn build                           
+   

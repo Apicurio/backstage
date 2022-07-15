@@ -11,6 +11,10 @@ yarn install
 yarn dev
 ```
 
+## Building for production
+
+
+
 ## Docker image
 
 ```
