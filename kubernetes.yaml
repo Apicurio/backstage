@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backstage
+  labels:
+    app: backstage
+spec:
+  selector:
+    matchLabels:
+      octopusexport: OctopusExport
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: backstage
+        octopusexport: OctopusExport
+    spec:
+      containers:
+        - name: app-services-backstage
+          image: quay.io/wtrocki/app-services-backstage
+          imagePullPolicy: Always
+          ports:
+            - name: 'app'
+              containerPort: 7007
+    

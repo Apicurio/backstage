@@ -21,7 +21,7 @@ RUN apt-get update && \
 RUN useradd -ms /bin/bash backend
 USER backend
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copy repo skeleton first, to avoid unnecessary docker cache invalidation.
 # The skeleton contains the package.json of each package in the monorepo,
