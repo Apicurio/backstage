@@ -13,8 +13,10 @@ yarn dev
 
 ## Building for production
 
+```
 yarn tsc 
 yarn build
+```
 
 ## Docker image
 
