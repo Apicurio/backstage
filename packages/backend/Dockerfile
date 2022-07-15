@@ -19,6 +19,10 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     yarn config set python /usr/bin/python3
 
+# Create the RHOAS user
+RUN useradd -ms /bin/bash backend
+USER backend
+
 # Copy repo skeleton first, to avoid unnecessary docker cache invalidation.
 # The skeleton contains the package.json of each package in the monorepo,
 # and along with yarn.lock and the root package.json, that's enough to run yarn install.
@@ -32,5 +36,7 @@ COPY packages/backend/dist/bundle.tar.gz app-config*.yaml ./
 RUN tar xzf bundle.tar.gz && rm bundle.tar.gz && chmod -R 777 packages/backend
 
 EXPOSE 7007
+
+
 
 CMD ["node", "packages/backend", "--config", "app-config.yaml", "--config", "app-config.production.yaml"]
