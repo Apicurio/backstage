@@ -11,14 +11,17 @@
 
 FROM node:16-bullseye-slim
 
-WORKDIR /app
-
 # install sqlite3 dependencies, you can skip this if you don't use sqlite3 in the image
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libsqlite3-dev python3 build-essential && \
     rm -rf /var/lib/apt/lists/* && \
     yarn config set python /usr/bin/python3
 
+# Create the RHOAS user
+RUN useradd -ms /bin/bash backend
+USER backend
+
+WORKDIR /app
 
 # Copy repo skeleton first, to avoid unnecessary docker cache invalidation.
 # The skeleton contains the package.json of each package in the monorepo,
@@ -31,10 +34,6 @@ RUN yarn install --frozen-lockfile --production --network-timeout 300000 && rm -
 # Then copy the rest of the backend bundle, along with any other files we might want.
 COPY packages/backend/dist/bundle.tar.gz app-config*.yaml ./
 RUN tar xzf bundle.tar.gz && rm bundle.tar.gz && chmod -R 777 packages/backend
-
-# Create the RHOAS user
-RUN useradd -ms /bin/bash backend
-USER backend
 
 EXPOSE 7007
 
