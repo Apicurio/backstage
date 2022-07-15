@@ -37,6 +37,4 @@ RUN tar xzf bundle.tar.gz && rm bundle.tar.gz && chmod -R 777 packages/backend
 
 EXPOSE 7007
 
-
-
 CMD ["node", "packages/backend", "--config", "app-config.yaml", "--config", "app-config.production.yaml"]
