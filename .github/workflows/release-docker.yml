@@ -1,0 +1,27 @@
+name: Publish Mock Docker image
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  push_to_registry:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3 
+      - name: Login
+        run: docker login -u="wtrocki" -p="${{secrets.QUAY_SECRET}}" quay.io
+      - name: Prepare
+        working-directory: packages/api-mock
+        run: yarn && yarn tsc && yarn build                           
+      - name: Build Image
+        working-directory: packages/api-mock
+        run: docker image build . -f packages/backend/Dockerfile -t quay.io/wtrocki/app-services-backstage 
+      - name: Push To quay.io
+        id: push-to-quay
+        run: docker push quay.io/wtrocki/app-services-backstage
+      
+      
+ 

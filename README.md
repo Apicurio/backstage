@@ -1,6 +1,8 @@
-# [Backstage](https://backstage.io)
+# App Services [Backstage](https://backstage.io)
 
-This is your newly scaffolded Backstage App, Good Luck!
+Backstage for Application Services
+
+## Running
 
 To start the app, run:
 
@@ -8,3 +10,14 @@ To start the app, run:
 yarn install
 yarn dev
 ```
+
+## Docker image
+
+```
+docker pull quay.io/wtrocki/app-services-backstage
+```
+
+## Releases
+
+1. Create new release in the github
+2. Docker image would be published automatically
