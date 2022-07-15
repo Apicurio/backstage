@@ -14,10 +14,8 @@ jobs:
       - name: Login
         run: docker login -u="wtrocki" -p="${{secrets.QUAY_SECRET}}" quay.io
       - name: Prepare
-        working-directory: packages/api-mock
         run: yarn && yarn tsc && yarn build                           
       - name: Build Image
-        working-directory: packages/api-mock
         run: docker image build . -f packages/backend/Dockerfile -t quay.io/wtrocki/app-services-backstage 
       - name: Push To quay.io
         id: push-to-quay
