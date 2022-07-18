@@ -17,11 +17,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     yarn config set python /usr/bin/python3
 
-# Create the RHOAS user
-RUN useradd -ms /bin/bash backend
-USER backend
-
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy repo skeleton first, to avoid unnecessary docker cache invalidation.
 # The skeleton contains the package.json of each package in the monorepo,
@@ -33,7 +29,10 @@ RUN yarn install --frozen-lockfile --production --network-timeout 300000 && rm -
 
 # Then copy the rest of the backend bundle, along with any other files we might want.
 COPY packages/backend/dist/bundle.tar.gz app-config*.yaml ./
-RUN tar xzf bundle.tar.gz && rm bundle.tar.gz && chmod -R 777 packages/backend
+RUN tar xzf bundle.tar.gz && rm bundle.tar.gz
+RUN chown -R 1001:0 /app && chmod -R ug+rwx /app
+
+USER 1001
 
 EXPOSE 7007
 
