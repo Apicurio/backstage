@@ -14,13 +14,16 @@ yarn start-backend
 
 ## Building for production
 
-yarn tsc 
+```bash
+yarn tsc
 yarn build
+```
 
 ## Docker image
 
-```
+```bash
 docker pull quay.io/wtrocki/app-services-backstage
+docker run -it -p 7007:7007 quay.io/wtrocki/app-services-backstage
 ```
 
 ## Releases
