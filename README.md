@@ -30,3 +30,9 @@ docker run -it -p 7007:7007 quay.io/wtrocki/app-services-backstage
 
 1. Create new release in the github
 2. Docker image would be published automatically
+
+## Deploying to OpenShift
+
+1. `oc new-app quay.io/wtrocki/app-services-backstage` (or use kubernetes.yaml for non openshift deploy)
+2. Fetch route url `oc get route`
+3. Set backend url in the env `APP_CONFIG_backend_baseUrl=your url` 
