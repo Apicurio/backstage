@@ -1,8 +1,8 @@
 name: Publish Docker image
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
 
 jobs:
   push_to_registry:
@@ -12,14 +12,11 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v3 
       - name: Login
-        run: docker login -u="wtrocki" -p="${{secrets.QUAY_SECRET}}" quay.io
+        run: docker login -u="aperuffo" -p="${{secrets.QUAY_SECRET}}" quay.io
       - name: Prepare
-        run: yarn && yarn tsc && yarn build                           
+        run: yarn && yarn tsc && yarn build
       - name: Build Image
-        run: docker image build . -f packages/backend/Dockerfile -t quay.io/wtrocki/app-services-backstage 
+        run: docker build . -t quay.io/aperuffo/backstage-demo:latest
       - name: Push To quay.io
         id: push-to-quay
-        run: docker push quay.io/wtrocki/app-services-backstage
-      
-      
- 
+        run: docker push quay.io/aperuffo/backstage-demo:latest

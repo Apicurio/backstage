@@ -22,14 +22,11 @@ yarn build
 ## Docker image
 
 ```bash
-docker pull quay.io/wtrocki/app-services-backstage
-docker run -it -p 7007:7007 quay.io/wtrocki/app-services-backstage
+docker pull quay.io/aperuffo/backstage-demo:latest
+docker run -it -p 7007:7007 quay.io/aperuffo/backstage-demo:latest
 ```
 
-## Releases
-
-1. Create new release in the github
-2. Docker image would be published automatically
+The Docker image will be rebuilt and pushed on merge to `main`.
 
 ## Deploying to OpenShift
 
