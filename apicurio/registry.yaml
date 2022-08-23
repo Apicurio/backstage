@@ -11,4 +11,4 @@ spec:
     # LOCAL DEV
     # $text: https://apicurio-registry-mt-apicurio-apicurio-registry.apps.smaug.na.operate-first.cloud/api-specifications/registry/v2/openapi.json
     # LIVE CLUSTER
-    $test: http://apicurio-registry-mt:8080/api-specifications/registry/v2/openapi.json
+    $text: http://apicurio-registry-mt:8080/api-specifications/registry/v2/openapi.json
