@@ -43,7 +43,10 @@ backend:
 
   reading:
     allow:
+      # LOCAL DEV
       - host: apicurio-registry-mt-apicurio-apicurio-registry.apps.smaug.na.operate-first.cloud
+      # LIVE CLUSTER
+      - host: apicurio-registry-mt:8080
 
 catalog:
   # Overrides the default list locations from app-config.yaml as these contain example data.
