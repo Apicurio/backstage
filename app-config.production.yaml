@@ -20,8 +20,12 @@ backend:
 
   # config options: https://node-postgres.com/api/client
   database:
+  
+    # DEVELOPMENT MODE:
     # client: better-sqlite3
     # connection: ':memory:'
+
+    # PRODUCTION MODE:
     client: pg
     pluginDivisionMode: schema # https://backstage.io/docs/tutorials/switching-sqlite-postgres#using-a-single-database
     connection:
@@ -37,8 +41,17 @@ backend:
       #   ca: # if you have a CA file and want to verify it you can uncomment this section
       #     $file: <file-path>/ca/server.crt
 
+  reading:
+    allow:
+      - host: apicurio-registry-mt-apicurio-apicurio-registry.apps.smaug.na.operate-first.cloud
+
 catalog:
   # Overrides the default list locations from app-config.yaml as these contain example data.
   # See https://backstage.io/docs/features/software-catalog/software-catalog-overview#adding-components-to-the-catalog for more details
   # on how to get entities into the catalog.
-  locations: []
+  rules:
+    - allow: [Component, System, API, Resource, Location]
+  locations:
+    # Apicurio registry
+    - type: file
+      target: ./apicurio/registry.yaml
