@@ -8,7 +8,7 @@ RUN npm install --global yarn
 
 # Still failing ... from: https://github.com/backstage/backstage/issues/9983#issuecomment-1133791360
 # Install Pythion > 3.7
-RUN yum install make gcc openssl-devel bzip2-devel libffi-devel zlib-devel java-11-openjdk-devel graphviz fontconfig -y && \
+RUN yum install make gcc openssl-devel bzip2-devel libffi-devel zlib-devel java-11-openjdk-devel graphviz fontconfig brotli-devel -y && \
   curl https://www.python.org/ftp/python/3.7.9/Python-3.7.9.tgz --output Python-3.7.9.tgz && \
   tar xzf Python-3.7.9.tgz && \
   cd Python-3.7.9 && \

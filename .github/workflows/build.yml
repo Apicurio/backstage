@@ -14,9 +14,11 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: "16.20"
+          node-version: "16"
           cache: yarn
           cache-dependency-path: yarn.lock  
       - name: build
-        run: yarn && yarn tsc && yarn build                           
+        run: yarn && yarn tsc && yarn build    
+      - name: Test Docker Image build
+        run: docker build .                
    
