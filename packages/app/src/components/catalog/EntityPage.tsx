@@ -52,6 +52,7 @@ import {
   EntityOwnershipCard,
 } from '@backstage/plugin-org';
 import { EntityTechdocsContent } from '@backstage/plugin-techdocs';
+import { EntityApicurioContent } from '@janus-idp/backstage-plugin-apicurio';
 import { EmptyState } from '@backstage/core-components';
 import {
   Direction,
@@ -179,6 +180,10 @@ const serviceEntityPage = (
 
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/apicurio" title="Apicurio">
+      <EntityApicurioContent />
     </EntityLayout.Route>
   </EntityLayout>
 );

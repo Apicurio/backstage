@@ -1,6 +1,6 @@
 app:
   # Should be the same as backend.baseUrl when using the `app-backend` plugin.
-  baseUrl: http://localhost:7007
+  baseUrl: ${APP_CONFIG_APP}
 
 backend:
   # Note that the baseUrl should be the URL that the browser and other clients
@@ -8,7 +8,7 @@ backend:
   # reachable not just from within the backend host, but from all of your
   # callers. When its value is "http://localhost:7007", it's strictly private
   # and can't be reached by others.
-  baseUrl: http://localhost:7007
+  baseUrl: ${APP_CONFIG_BACKEND}
   listen:
     port: 7007
     # The following host directive binds to all IPv4 interfaces when its value
@@ -55,6 +55,10 @@ catalog:
   rules:
     - allow: [Component, System, API, Resource, Location]
   locations:
-    # Apicurio registry
     - type: file
-      target: ./apicurio/registry.yaml
+      target: ./apicurio/registry.yaml  
+    - type: file
+      target: ./apicurio/demo.yaml  
+  providers:
+    apicurio:
+      url: ${APICURIO_ENDPOINT}    
