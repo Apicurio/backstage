@@ -61,5 +61,4 @@ catalog:
       target: ./apicurio/demo.yaml  
   providers:
     apicurio:
-      # url: ${APICURIO_ENDPOINT}    
-      url: https://apicurio-registry-rhaf-apicurio-registry.apps.dev-eng-ocp4-mas.dev.3sca.net
+      url: ${APICURIO_ENDPOINT}    
