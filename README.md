@@ -12,6 +12,17 @@ yarn dev
 yarn start-backend
 ```
 
+## Build pre-requisites on Fedora
+
+```sh
+# you need to install python3.10 and pass a reference to GYP to use it
+sudo dnf install pypy2 pypy3.9 python3.10 libuv-devel brotli-devel
+export  NODE_GYP_FORCE_PYTHON=/usr/bin/python3.10
+
+yarn install
+
+```
+
 ## Building for production
 
 ```bash
