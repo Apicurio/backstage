@@ -18,11 +18,11 @@ jobs:
           cache: yarn
           cache-dependency-path: yarn.lock     
       - name: Login
-        run: docker login -u="aperuffo" -p="${{secrets.QUAY_SECRET}}" quay.io
+        run: docker login -u="${{secrets.QUAY_USERNAME}}" -p="${{secrets.QUAY_PASSWORD}}" quay.io
       - name: Prepare
         run: yarn && yarn tsc && yarn build
       - name: Build Image
-        run: docker build . -t quay.io/aperuffo/backstage-demo:latest
+        run: docker build . -t quay.io/apicurio/backstage:latest
       - name: Push To quay.io
         id: push-to-quay
-        run: docker push quay.io/aperuffo/backstage-demo:latest
+        run: docker push quay.io/apicurio/backstage:latest
