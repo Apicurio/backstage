@@ -1,0 +1,52 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ApicurioRegistry
+  links:
+    - url: https://www.apicur.io/registry/
+      title: Page
+      icon: dashboard
+  annotations:
+    backstage.io/source-location: url:https://github.com/Apicurio/apicurio-registry
+spec:
+  type: project
+  lifecycle: production
+  owner: eng
+  system: upstream
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ServiceRegistry
+  links:
+    - url: https://www.apicur.io/registry/
+      title: Page
+      icon: dashboard
+  annotations:
+    backstage.io/source-location: url:https://github.com/Apicurio/apicurio-registry
+spec:
+  type: project
+  lifecycle: production
+  owner: eng
+  system: downstream
+  dependsOn: [component:ApicurioRegistry]
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: apicurio-registry-api
+  description: The Apicurio Registry API V2
+spec:
+  type: openapi
+  lifecycle: production
+  owner: eng
+  definition:
+    # LOCAL DEV
+    # $text: https://apicurio-registry-mt-apicurio-apicurio-registry.apps.smaug.na.operate-first.cloud/api-specifications/registry/v2/openapi.json
+    # LIVE CLUSTER
+    $text: http://localhost:8080/api-specifications/registry/v2/openapi.json
