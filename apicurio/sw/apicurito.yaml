@@ -1,0 +1,17 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Apicurito
+  links:
+    - url: https://www.apicur.io/apicurito/
+      title: Page
+      icon: dashboard
+  annotations:
+    backstage.io/source-location: url:https://github.com/Apicurio/apicurito
+spec:
+  type: project
+  lifecycle: production
+  owner: eng
+  system: upstream

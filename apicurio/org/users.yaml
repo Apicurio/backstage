@@ -1,0 +1,143 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: pantinor
+spec:
+  profile:
+    displayName: Paolo Antinori
+    email: pantinor@redhat.com
+    picture: https://source.redhat.com/.api2/api/v1/workplaces/2000081750/users/1a956af4-1dcb-46fc-b09e-5e035fc488b3/profilePhoto?1688482136
+    rover: https://rover.redhat.com/people/profile/pantinor
+  memberOf: [eng]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ewittman
+spec:
+  profile:
+    displayName: Eric Wittmann
+    email: ewittman@redhat.com
+  memberOf: [eng,frontend]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jsenko
+spec:
+  profile:
+    displayName: Jakub Senko
+    email: jsenko@redhat.com
+  memberOf: [eng]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: carnalca
+spec:
+  profile:
+    displayName: Carles Arnal Castello
+    email: carnalca@redhat.com
+  memberOf: [eng]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: riprasad
+spec:
+  profile:
+    displayName: Rishab Prasad
+    email: riprasad@redhat.com
+  memberOf: [eng,prod]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: stmccart
+spec:
+  profile:
+    displayName: Stephen McCarthy
+    email: stmccart@redhat.com
+  memberOf: [docs]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: rkubis
+spec:
+  profile:
+    displayName: Radim Kubis
+    email: rkubis@redhat.com
+  memberOf: [qe]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: aperuffo
+spec:
+  profile:
+    displayName: Andrea Peruffo
+    email: aperuffo@redhat.com
+  memberOf: [eng]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: nipatil
+spec:
+  profile:
+    displayName: Nikisha Patil
+    email: nipatil@redhat.com
+  memberOf: [eng,prod]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: vikrakum
+spec:
+  profile:
+    displayName: Vikram Kumar
+    email: vikrakum@redhat.com
+  memberOf: [eng,prod]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: amoncy
+spec:
+  profile:
+    displayName: Anshu Anna Moncy
+    email: amoncy@redhat.com
+  memberOf: [eng]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jexiao
+spec:
+  profile:
+    displayName: Jean Xiao
+    email: jexiao@redhat.com
+  memberOf: [eng]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: msafar
+spec:
+  profile:
+    displayName: Miroslav Šafář
+    email: msafar@redhat.com
+  memberOf: [eng]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: bmccolga
+spec:
+  profile:
+    displayName: Breda McColgan
+    email: bmccolga@redhat.com
+  memberOf: [docs]

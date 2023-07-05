@@ -56,9 +56,54 @@ catalog:
     - allow: [Component, System, API, Resource, Location]
   locations:
     - type: file
-      target: ./apicurio/registry.yaml  
+      target: ./apicurio/registry.yaml
     - type: file
-      target: ./apicurio/demo.yaml  
+      target: ./apicurio/demo.yaml
+    # Local example template
+    - type: file
+      target: ./apicurio/sw/registry.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ./apicurio/sw/studio.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ./apicurio/sw/website.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ./apicurio/sw/datamodels.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ./apicurio/sw/apicurito.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ./apicurio/sw/systems/upstream.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ./apicurio/sw/systems/downstream.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+
+    - type: file
+      target: ./apicurio/demo.yaml
+    - type: file
+      target: ./apicurio/org/users.yaml
+      rules:
+        - allow: [User]
+    - type: file
+      target: ./apicurio/org/groups.yaml
+      rules:
+        - allow: [Group]
+
+    - type: file
+      target: ./apicurio/registry.yaml
+    - type: file
+      target: ./apicurio/demo.yaml
   providers:
     apicurio:
       url: ${APICURIO_ENDPOINT}    

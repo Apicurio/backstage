@@ -11,3 +11,4 @@ spec:
   type: service
   lifecycle: production
   owner: user:guest
+  providesApis: [apicurio-registry-api]

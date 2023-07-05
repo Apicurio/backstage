@@ -37,7 +37,9 @@ backend:
   cache:
     store: memory
   # workingDirectory: /tmp # Use this to configure a working directory for the scaffolder, defaults to the OS temp-dir
-
+  reading:
+    allow:
+      - host: localhost:8080
 integrations:
   github:
     - host: github.com
@@ -79,9 +81,6 @@ catalog:
   rules:
     - allow: [Component, System, API, Resource, Location]
   locations:
-    # Local example data, file locations are relative to the backend process, typically `packages/backend`
-    - type: file
-      target: ../../examples/entities.yaml
 
     # Local example template
     - type: file
@@ -89,11 +88,46 @@ catalog:
       rules:
         - allow: [Template]
 
-    # Local example organizational data
+    # Local example template
     - type: file
-      target: ../../examples/org.yaml
+      target: ../../apicurio/sw/registry.yaml
       rules:
-        - allow: [User, Group]
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/studio.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/website.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/datamodels.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/apicurito.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/systems/upstream.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/systems/downstream.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+
+    - type: file
+      target: ../../apicurio/demo.yaml
+    - type: file
+      target: ../../apicurio/org/users.yaml
+      rules:
+        - allow: [User]
+    - type: file
+      target: ../../apicurio/org/groups.yaml
+      rules:
+        - allow: [Group]
 
     - type: file
       target: ../../apicurio/registry.yaml
@@ -110,4 +144,4 @@ catalog:
     #     - allow: [User, Group]
   providers:
     apicurio:
-      url: ${APICURIO_ENDPOINT}
+      url: ${REGISTRY_ENDPOINT}
