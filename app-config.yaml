@@ -95,6 +95,10 @@ catalog:
       rules:
         - allow: [User, Group]
 
+    - type: file
+      target: ../../apicurio/registry.yaml
+    - type: file
+      target: ../../apicurio/demo.yaml
     ## Uncomment these lines to add more example data
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
@@ -104,3 +108,6 @@ catalog:
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
     #   rules:
     #     - allow: [User, Group]
+  providers:
+    apicurio:
+      url: ${APICURIO_ENDPOINT}
