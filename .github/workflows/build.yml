@@ -17,8 +17,8 @@ jobs:
           node-version: "16"
           cache: yarn
           cache-dependency-path: yarn.lock  
-      - name: build
+      - name: Build web app
         run: yarn && yarn tsc && yarn build    
-      - name: Test Docker Image build
+      - name: Build OCI image
         run: docker build .                
    

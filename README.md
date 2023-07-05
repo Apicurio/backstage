@@ -2,14 +2,17 @@
 
 Backstage for Application Services
 
-## Running
+## Running Locally
 
 To start the app, run:
 
 ```sh
+# build
 yarn install
-yarn dev
-yarn start-backend
+# you need to specify the Registry endpoint
+# to bring up a temporary in-memory one:
+#  podman run  -it -p 8080:8080 apicurio/apicurio-registry-mem:latest-release
+REGISTRY_ENDPOINT="http://localhost:8080" yarn dev
 ```
 
 ## Build pre-requisites on Fedora
