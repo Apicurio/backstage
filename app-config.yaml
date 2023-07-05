@@ -144,4 +144,4 @@ catalog:
     #     - allow: [User, Group]
   providers:
     apicurio:
-      url: ${APICURIO_ENDPOINT}
+      url: ${REGISTRY_ENDPOINT}
