@@ -130,8 +130,6 @@ catalog:
         - allow: [Group]
 
     - type: file
-      target: ../../apicurio/registry.yaml
-    - type: file
       target: ../../apicurio/demo.yaml
     ## Uncomment these lines to add more example data
     # - type: url
