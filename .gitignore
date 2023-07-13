@@ -38,3 +38,6 @@ site
 # Sensitive credentials
 *-credentials.yaml
 .vscode
+
+# env
+.env
