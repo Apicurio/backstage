@@ -14,6 +14,18 @@ yarn install
 #  podman run  -it -p 8080:8080 apicurio/apicurio-registry-mem:latest-release
 REGISTRY_ENDPOINT="http://localhost:8080" yarn dev
 ```
+## Replicate the environment
+
+```sh
+# create a new environment
+python3.10 -m venv .env
+# activate it
+source .env/bin/activate
+# or this if on windows
+.\env\Scripts\activate
+# install packages
+pip install -r requirements.txt
+```
 
 ## Build pre-requisites on Fedora
 
