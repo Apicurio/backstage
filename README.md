@@ -2,6 +2,18 @@
 
 Backstage for Application Services
 
+## Replicate the environment
+
+```sh
+# create a new environment
+python -m venv .env
+# activate it
+source .env/bin/activate
+# or run ".\env\Scripts\activate" if on windows
+# install packages
+pip install -r requirements.txt
+```
+
 ## Running Locally
 
 To start the app, run:
