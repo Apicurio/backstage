@@ -4,10 +4,23 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Apicurito
+  description: Apicurito is basically the OpenAPI editor found in Studio and repackaged as a simple standalone web application. It has no back-end component at all, which makes it incredibly easy to package, deploy, and use. However, the trade-off is that it only supports the core visual editing experience found in Studio, without the collaboration, persistence, and integration with external systems.
   links:
     - url: https://www.apicur.io/apicurito/
       title: Page
       icon: dashboard
+    - url: https://www.apicur.io/apicurito/download/
+      title: Download
+      icon: web
+    - url: https://github.com/apicurio/apicurito/issues
+      title: Issue Tracker
+      icon: web
+      - url: https://hub.docker.com/search?q=apicurio%2Fapicurito&type=image
+      title: Docker Images
+      icon: web
+    - url: https://www.apicur.io/apicurito/pwa/
+      title: Try Live
+      icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurito
 spec:

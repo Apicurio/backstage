@@ -4,10 +4,26 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ApicurioRegistry
+  description: In the context of Apicurio, a registry is a runtime system (server) that stores a specific set of artifacts (files). At its core, a registry provides the ability to add, update, and remove the artifacts from the store, typically via a remote API of some kind (often a REST API).
   links:
     - url: https://www.apicur.io/registry/
-      title: Page
+      title: Website
       icon: dashboard
+    - url: https://www.apicur.io/registry/try-live/
+      title: Try Live
+      icon: web
+    - url: https://www.apicur.io/registry/download/
+      title: Download
+      icon: web
+    - url: https://www.apicur.io/registry/docs/apicurio-registry/2.4.x/index.html
+      title: Documentation
+      icon: web
+    - url: https://github.com/apicurio/apicurio-registry/issues
+      title: Issue Tracker
+      icon: web
+    - url: hhttps://hub.docker.com/search?q=apicurio%2Fapicurio-registry&type=image
+      title: Docker Images
+      icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio-registry
 spec:
