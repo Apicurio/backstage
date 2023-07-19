@@ -4,10 +4,24 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ApicurioRegistry
+  title: Apicurio Registry
+  description: An API/Schema registry - stores and retrieves APIs and Schemas. Apicurio Registry is a datastore for sharing standard event schemas and API designs across event-driven and API architectures.
   links:
     - url: https://www.apicur.io/registry/
       title: Page
       icon: dashboard
+    - url: https://www.apicur.io/registry/
+      title: Apicurio Registry Page
+      icon: web
+    - url: https://www.apicur.io/registry/docs/apicurio-registry/2.4.x/index.html
+      title: Documentation
+      icon: web
+    - url: https://github.com/apicurio/apicurio-registry
+      title: Build Configuration
+      icon: web
+    - url: https://apicurio.zulipchat.com/
+      title: Zulip Chat
+      icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio-registry
 spec:
