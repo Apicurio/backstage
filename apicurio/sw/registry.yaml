@@ -4,7 +4,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ApicurioRegistry
-  Description:
+  Description: Apicurio Registry is a datastore for sharing standard event schemas and API designs across event-driven and API architectures.
   links:
     - url: https://www.apicur.io/registry/
       title: Page
