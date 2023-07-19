@@ -4,6 +4,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: downstream
+  description: The downstream system consists of the ServiceRegistry component.
   annotations:
     backstage.io/source-location: url:https://www.redhat.com
 spec:
