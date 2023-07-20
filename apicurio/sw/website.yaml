@@ -4,6 +4,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Website
+  description: Visit our official website to find our main products such as Apicurio Studio for intuitive API design, Apicurio Registry for API and schema management, Apicurio Data Models for specification-oriented data modeling, and Apicurito, a compact version of our Studio for seamless API editing.
   links:
     - url: https://www.apicur.io
       title: Apicurio Website

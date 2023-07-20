@@ -4,6 +4,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: upstream
+  description: "The upstream system in Apicurio encompasses several key components: ApicurioRegistry, ApicurioStudio, Apicurito, DataModels and the Website."
   annotations:
     backstage.io/source-location: ""
 spec:

@@ -8,10 +8,13 @@ metadata:
   description: An API/Schema registry - stores and retrieves APIs and Schemas. Apicurio Registry is a datastore for sharing standard event schemas and API designs across event-driven and API architectures.
   links:
     - url: https://www.apicur.io/registry/
-      title: Page
+      title: Website
       icon: dashboard
-    - url: https://www.apicur.io/registry/
-      title: Apicurio Registry Page
+    - url: https://www.apicur.io/registry/try-live/
+      title: Try Live
+      icon: web
+    - url: https://www.apicur.io/registry/download/
+      title: Download
       icon: web
     - url: https://www.apicur.io/registry/docs/apicurio-registry/2.4.x/index.html
       title: Documentation
@@ -21,6 +24,11 @@ metadata:
       icon: web
     - url: https://apicurio.zulipchat.com/
       title: Zulip Chat
+    - url: https://github.com/apicurio/apicurio-registry/issues
+      title: Issue Tracker
+      icon: web
+    - url: hhttps://hub.docker.com/search?q=apicurio%2Fapicurio-registry&type=image
+      title: Docker Images
       icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio-registry
