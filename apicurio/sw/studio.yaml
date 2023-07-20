@@ -4,10 +4,29 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ApicurioStudio
+  description: Apicurio Studio is a web based API Design suite, primarily (but not exclusively) built to support design-first REST API development. It provides a way for users to collaboratively and visually design their APIs prior to (or concurrent with) the implementation.
   links:
     - url: https://www.apicur.io/studio/
-      title: Page
+      title: Website
       icon: dashboard
+    - url: https://www.apicur.io/studio/download/
+      title: Download
+      icon: web
+    - url: https://www.apicur.io/studio/docs/
+      title: Documentation
+      icon: web
+    - url: https://www.apicur.io/studio/roadmap/
+      title: Roadmap
+      icon: web
+    - url: https://github.com/apicurio/apicurio-studio/issues
+      title: Issue Tracker
+      icon: web
+    - url: https://hub.docker.com/search?q=apicurio%2Fapicurio-studio&type=image
+      title: Docker Images
+      icon: web
+    - url: https://studio.apicur.io/
+      title: Try Live
+      icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio-studio
 spec:

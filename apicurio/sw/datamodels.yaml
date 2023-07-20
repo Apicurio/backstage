@@ -4,10 +4,20 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: DataModels
+  description: The Apicurio Data Models library is a Java and Typescript compatible library that provides reading, writing, analysis, modification, and validation of OpenAPI and AsyncAPI documents. Use this library if you need to support either OpenAPI or AsyncAPI specifications in your own projects.
   links:
     - url: https://www.apicur.io/datamodels/
       title: Page
       icon: dashboard
+    - url: https://www.apicur.io/datamodels/usagejava/
+      title: Usage (Java)
+      icon: web
+    - url: https://www.apicur.io/datamodels/usagets/
+      title: Usage (Typescript)
+      icon: web
+    - url: https://github.com/apicurio/apicurio-data-models/issues
+      title: Issue Tracker
+      icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio-data-models
 spec:
