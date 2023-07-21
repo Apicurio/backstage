@@ -15,7 +15,7 @@ metadata:
     - url: https://github.com/apicurio/apicurito/issues
       title: Issue Tracker
       icon: web
-      - url: https://hub.docker.com/search?q=apicurio%2Fapicurito&type=image
+    - url: https://hub.docker.com/search?q=apicurio%2Fapicurito&type=image
       title: Docker Images
       icon: web
     - url: https://www.apicur.io/apicurito/pwa/
