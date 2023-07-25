@@ -1,8 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: app-services-cli
-  description: App Services CLI 
+  name: gdrive-folders
+  description: Shared Apicurio GDrive Folders
+  annotations:
+    backstage.io/techdocs-ref: dir:.
   # Example for optional annotations
   # annotations:
   #   github.com/project-slug: backstage/backstage
@@ -10,5 +12,5 @@ metadata:
   
 spec:
   type: library
-  owner: devexp
+  owner: eng
   lifecycle: production
