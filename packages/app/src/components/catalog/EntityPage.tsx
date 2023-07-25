@@ -46,11 +46,11 @@ import {
   EntityGithubActionsContent,
 } from '@backstage/plugin-github-actions';
 import {
-  EntityUserProfileCard,
   EntityGroupProfileCard,
   EntityMembersListCard,
   EntityOwnershipCard,
 } from '@backstage/plugin-org';
+import { CustomUserProfileCard } from './CustomUserProfileCard';
 import { EntityTechdocsContent } from '@backstage/plugin-techdocs';
 import { EntityApicurioContent } from '@janus-idp/backstage-plugin-apicurio';
 import { EmptyState } from '@backstage/core-components';
@@ -289,7 +289,7 @@ const userPage = (
       <Grid container spacing={3}>
         {entityWarningContent}
         <Grid item xs={12} md={6}>
-          <EntityUserProfileCard variant="gridItem" />
+          <CustomUserProfileCard variant="gridItem" />
         </Grid>
         <Grid item xs={12} md={6}>
           <EntityOwnershipCard variant="gridItem" />
