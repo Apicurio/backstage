@@ -1,0 +1,7 @@
+site_name: 'Google Drive Folders'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
