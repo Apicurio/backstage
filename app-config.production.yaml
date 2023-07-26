@@ -104,6 +104,8 @@ catalog:
       target: ./apicurio/registry.yaml
     - type: file
       target: ./apicurio/demo.yaml
+    - type: file
+      target: ./catalog-info.yaml
   providers:
     apicurio:
       url: ${APICURIO_ENDPOINT}    

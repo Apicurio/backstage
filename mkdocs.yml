@@ -1,7 +1,9 @@
-site_name: 'Google Drive Folders'
+site_name: 'Apicurio Documentation'
 
 nav:
-  - Home: index.md
+  - Overview: index.md
+  - Quality Engineering Systems: qe.md
+  - Google Drive Resources: gdrive.md
 
 plugins:
   - techdocs-core
