@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: documentation-demo
-  description: test
+  name: Apicurio_Documentation
+  description: Main Documentation For Apicurio
   annotations:
     backstage.io/techdocs-ref: dir:.
   # Example for optional annotations

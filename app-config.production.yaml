@@ -47,6 +47,13 @@ backend:
       - host: apicurio-registry-mt-apicurio-apicurio-registry.apps.smaug.na.operate-first.cloud
       # LIVE CLUSTER
       - host: apicurio-registry-mt:8080
+      
+techdocs:
+  builder: 'local' # Alternatives - 'external'
+  generator:
+    runIn: 'local' # Alternatives - 'local'
+  publisher:
+    type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
 catalog:
   # Overrides the default list locations from app-config.yaml as these contain example data.

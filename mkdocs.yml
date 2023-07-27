@@ -4,6 +4,17 @@ nav:
   - Overview: index.md
   - Quality Engineering Systems: qe.md
   - Google Drive Resources: gdrive.md
+  - Onboarding:
+    - Onboarding Document: Onboarding/onboarding.md
+    - Communication: Onboarding/communication.md
+    - TeamInfo: Onboarding/teaminfo.md
+    - Learning: Onboarding/learning.md
+    - Repositories: Onboarding/repositories.md
+    - Issues: Onboarding/issues.md
+    - Additional Readings: Onboarding/additional.md
+  - Overview: index.md
+  - Quality Engineering Systems: qe.md
+  - Google Drive Resources: gdrive.md
 
 plugins:
   - techdocs-core
