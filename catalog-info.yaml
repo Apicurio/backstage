@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: gdrive-folders
-  description: Shared Apicurio GDrive Folders
+  name: documentation-demo
+  description: test
   annotations:
     backstage.io/techdocs-ref: dir:.
   # Example for optional annotations
