@@ -2,23 +2,13 @@
 
 Backstage for Application Services
 
-## Replicate the environment
-
-```sh
-# create a new environment
-python -m venv .env
-# activate it
-source .env/bin/activate
-# or run ".\env\Scripts\activate" if on windows
-# install packages
-pip install -r requirements.txt
-```
-
 ## Running Locally
 
 To start the app, run:
 
 ```sh
+# Create venv, activate it, and install requirements
+python3.10 -m venv .env && source .env/bin/activate && pip install -r requirements.txt
 # build
 yarn install
 # you need to specify the Registry endpoint
