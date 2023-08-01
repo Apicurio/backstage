@@ -16,7 +16,7 @@ RUN yum install make gcc openssl-devel bzip2-devel libffi-devel zlib-devel java-
   make altinstall && \
   curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && \
   python3.7 get-pip.py && \
-  pip3 install --upgrade pip && pip install mkdocs-techdocs-core==1.0.2 && \
+  pip3 install --upgrade pip && pip install mkdocs-techdocs-core==1.2.1 && \
   cd .. && rm Python-3.7.9.tgz && rm -rf Python-3.7.9 && \
   yum -y clean all --enablerepo='*'
 RUN curl -o plantuml.jar -L http://sourceforge.net/projects/plantuml/files/plantuml.1.2021.12.jar/download && echo "a3d10c17ab1158843a7a7120dd064ba2eda4363f  plantuml.jar" | sha1sum -c - && mv plantuml.jar /opt/plantuml.jar

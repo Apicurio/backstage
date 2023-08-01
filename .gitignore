@@ -39,5 +39,5 @@ site
 *-credentials.yaml
 .vscode
 
-# env
-.env
+# .idea
+.idea/

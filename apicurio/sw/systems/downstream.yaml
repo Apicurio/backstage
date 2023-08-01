@@ -7,5 +7,7 @@ metadata:
   description: The downstream system consists of the ServiceRegistry component.
   annotations:
     backstage.io/source-location: url:https://www.redhat.com
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/sw/systems/downstream.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/sw/systems/downstream.yaml
 spec:
   owner: eng

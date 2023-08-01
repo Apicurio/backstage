@@ -7,5 +7,7 @@ metadata:
   description: "The upstream system in Apicurio encompasses several key components: ApicurioRegistry, ApicurioStudio, Apicurito, DataModels and the Website."
   annotations:
     backstage.io/source-location: ""
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/sw/systems/upstream.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/sw/systems/upstream.yaml
 spec:
   owner: eng

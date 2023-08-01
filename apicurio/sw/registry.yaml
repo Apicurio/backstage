@@ -32,6 +32,9 @@ metadata:
       icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio-registry
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/sw/registry.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/sw/registry.yaml
+    github.com/project-slug: Apicurio/apicurio-registry
 spec:
   type: project
   lifecycle: production
@@ -50,6 +53,8 @@ metadata:
       icon: dashboard
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio-registry
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/sw/registry.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/sw/registry.yaml
 spec:
   type: project
   lifecycle: production

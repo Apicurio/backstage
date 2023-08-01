@@ -23,6 +23,9 @@ metadata:
       icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurito
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/sw/apicurito.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/sw/apicurito.yaml
+    github.com/project-slug: Apicurio/apicurito
 spec:
   type: project
   lifecycle: production

@@ -72,6 +72,12 @@ import {
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 
+import {
+  EntityGithubPullRequestsContent,
+  isGithubPullRequestsAvailable,
+  EntityGithubPullRequestsOverviewCard,
+} from '@roadiehq/backstage-plugin-github-pull-requests';
+
 const techdocsContent = (
   <EntityTechdocsContent>
     <TechDocsAddons>
@@ -133,14 +139,24 @@ const overviewContent = (
     <Grid item md={6}>
       <EntityAboutCard variant="gridItem" />
     </Grid>
-    <Grid item md={6} xs={12}>
+
+    <Grid item md={6}>
       <EntityCatalogGraphCard variant="gridItem" height={400} />
     </Grid>
 
-    <Grid item md={4} xs={12}>
+    <EntitySwitch>
+      <EntitySwitch.Case if={isGithubPullRequestsAvailable}>
+        <Grid item md={4}>
+          <EntityGithubPullRequestsOverviewCard />
+        </Grid>
+      </EntitySwitch.Case>
+    </EntitySwitch>
+
+    <Grid item md={4}>
       <EntityLinksCard />
     </Grid>
-    <Grid item md={8} xs={12}>
+
+    <Grid item md={4}>
       <EntityHasSubcomponentsCard variant="gridItem" />
     </Grid>
   </Grid>
@@ -185,6 +201,16 @@ const serviceEntityPage = (
     <EntityLayout.Route path="/apicurio" title="Apicurio">
       <EntityApicurioContent />
     </EntityLayout.Route>
+
+    <EntityLayout.Route
+      path="/pull-requests"
+      title="Pull Requests"
+      // Uncomment the line below if you'd like to only show the tab on entities with the correct annotations already set
+      // if={isGithubPullRequestsAvailable}
+    >
+      <EntityGithubPullRequestsContent />
+    </EntityLayout.Route>
+    
   </EntityLayout>
 );
 

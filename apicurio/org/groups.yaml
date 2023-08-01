@@ -4,6 +4,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: eng
+  annotations:
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/groups.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/groups.yaml
 spec:
   type: team
   children: [prod,frontend]
@@ -13,6 +16,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: prod
+  annotations:
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/groups.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/groups.yaml
 spec:
   type: team
   children: []
@@ -22,6 +28,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: frontend
+  annotations:
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/groups.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/groups.yaml
 spec:
   type: team
   children: []
@@ -34,6 +43,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: qe
+  annotations:
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/groups.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/groups.yaml
 spec:
   type: team
   children: []
@@ -43,6 +55,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: docs
+  annotations:
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/groups.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/groups.yaml
 spec:
   type: team
   children: []

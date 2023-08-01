@@ -20,6 +20,9 @@ metadata:
       icon: web
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio-data-models
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/sw/datamodels.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/sw/datamodels.yaml
+    github.com/project-slug: Apicurio/apicurio-data-models
 spec:
   type: library
   lifecycle: production

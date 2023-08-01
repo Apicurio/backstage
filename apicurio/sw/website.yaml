@@ -11,6 +11,9 @@ metadata:
       icon: dashboard
   annotations:
     backstage.io/source-location: url:https://github.com/Apicurio/apicurio.github.io
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/sw/website.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/sw/website.yaml
+    github.com/project-slug: Apicurio/apicurio.github.io
 spec:
   type: website
   lifecycle: production

@@ -14,7 +14,7 @@ yarn install
 # you need to specify the Registry endpoint
 # to bring up a temporary in-memory one:
 #  podman run  -it -p 8080:8080 apicurio/apicurio-registry-mem:latest-release
-REGISTRY_ENDPOINT="http://localhost:8080" yarn dev
+REGISTRY_ENDPOINT="http://localhost:8080" AUTH_GITHUB_CLIENT_ID=<Client ID> AUTH_GITHUB_CLIENT_SECRET=<Client Secret> yarn dev
 ```
 
 ## Build pre-requisites on Fedora

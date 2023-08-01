@@ -50,5 +50,8 @@
     "*.{json,md}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@roadiehq/backstage-plugin-github-pull-requests": "^2.5.14"
   }
 }

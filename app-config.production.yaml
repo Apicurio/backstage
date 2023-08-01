@@ -55,6 +55,14 @@ techdocs:
   publisher:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
+auth:
+  # see https://backstage.io/docs/auth/ to learn about auth providers
+  providers: 
+    github:
+        development:
+          clientId: ${AUTH_GITHUB_CLIENT_ID}
+          clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
+          
 catalog:
   # Overrides the default list locations from app-config.yaml as these contain example data.
   # See https://backstage.io/docs/features/software-catalog/software-catalog-overview#adding-components-to-the-catalog for more details

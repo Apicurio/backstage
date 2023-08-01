@@ -8,6 +8,8 @@ metadata:
     github.com/username: paoloantinori
     jira/username: pantinor@redhat.com
     rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/pantinor
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Paolo Antinori
@@ -23,6 +25,8 @@ metadata:
     github.com/username: EricWittmann
     jira/username: ewittman@redhat.com
     rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/ewittman
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Eric Wittmann
@@ -37,6 +41,8 @@ metadata:
     github.com/username: jsenko
     jira/username: jsenko@redhat.com
     rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/jsenko
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Jakub Senko
@@ -51,6 +57,8 @@ metadata:
       github.com/username: carlesarnal
       jira/username: carnalca
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/carnalca
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Carles Arnal Castello
@@ -65,6 +73,8 @@ metadata:
       github.com/username: riprasad
       jira/username: riprasad@redhat.com
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/riprasad
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Rishab Prasad
@@ -79,6 +89,8 @@ metadata:
       github.com/username: smccarthy-ie
       jira/username: stmccart1@redhat.com
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/stmccart
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Stephen McCarthy
@@ -93,6 +105,8 @@ metadata:
       github.com/username: rkubis
       jira/username: rkubis_kafka_devexp
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/rkubis
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Radim Kubis
@@ -107,6 +121,8 @@ metadata:
       github.com/username: andreaTP
       jira/username: aperuffo@redhat.com
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/aperuffo
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Andrea Peruffo
@@ -121,6 +137,8 @@ metadata:
       github.com/username: NikishaPatil
       jira/username: nipatil@redhat.com
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/nipatil
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Nikisha Patil
@@ -131,6 +149,9 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: vikrakum
+  annotations:
+    backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+    backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Vikram Kumar
@@ -145,6 +166,8 @@ metadata:
       github.com/username: Amoncy
       jira/username: rh-ee-amoncy
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/amoncy
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Anshu Anna Moncy
@@ -159,6 +182,8 @@ metadata:
       github.com/username: renjingxiao
       jira/username: rh-ee-jexiao
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/jexiao
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Jean Xiao
@@ -173,6 +198,8 @@ metadata:
       github.com/username: SafarMirek
       jira/username: msafar@redhat.com
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/msafar
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Miroslav Šafář
@@ -187,6 +214,8 @@ metadata:
       github.com/username: bredamc
       jira/username: bmccolga@redhat.com
       rover.redhat.com/user-profile: https://rover.redhat.com/people/profile/bmccolga
+      backstage.io/view-url: https://github.com/Apicurio/backstage/blob/main/apicurio/org/users.yaml
+      backstage.io/edit-url: https://github.com/Apicurio/backstage/edit/main/apicurio/org/users.yaml
 spec:
   profile:
     displayName: Breda McColgan
