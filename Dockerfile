@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi8/nodejs-16
 
-WORKDIR /opt/backstage
+WORKDIR /app
 
 USER root
 
@@ -27,11 +27,11 @@ RUN tar xzf skeleton.tar.gz && rm skeleton.tar.gz
 
 RUN yarn install --frozen-lockfile --production --network-timeout 300000 && rm -rf "$(yarn cache dir)"
 
-COPY --chown=1001:0 packages/backend/dist/bundle.tar.gz app-config*.yaml ./
-COPY --chown=1001:0 apicurio ./apicurio
+COPY --chown=1001:0 packages/backend/dist/bundle.tar.gz app-config*.yaml /app/
+COPY --chown=1001:0 apicurio /app/apicurio
 RUN tar xzf bundle.tar.gz && rm bundle.tar.gz
 
-RUN chown -R 1001:0 /opt/backstage && chmod -R ug+rwx /opt/backstage
+RUN chown -R 1001:0 /app && chmod -R ug+rwx /app
 
 ENV LOG_LEVEL=debug
 
