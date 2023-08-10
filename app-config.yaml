@@ -75,9 +75,6 @@ scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
 
 catalog:
-  import:
-    entityFilename: catalog-info.yaml
-    pullRequestBranchName: backstage-integration
   rules:
     - allow: [Component, System, API, Resource, Location]
   locations:
@@ -132,7 +129,7 @@ catalog:
     - type: file
       target: ../../apicurio/demo.yaml
     - type: file
-      target: ../../catalog-info.yaml
+      target: ../../apicurio/catalog-info.yaml
     ## Uncomment these lines to add more example data
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
@@ -144,4 +141,4 @@ catalog:
     #     - allow: [User, Group]
   providers:
     apicurio:
-      url: ${REGISTRY_ENDPOINT}
+      url: ${APICURIO_ENDPOINT}
