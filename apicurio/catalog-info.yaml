@@ -4,7 +4,7 @@ metadata:
   name: documentation-demo
   description: test
   annotations:
-    backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:docs
   # Example for optional annotations
   # annotations:
   #   github.com/project-slug: backstage/backstage

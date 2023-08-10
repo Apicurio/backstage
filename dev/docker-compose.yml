@@ -32,7 +32,8 @@ services:
       POSTGRES_PASSWORD: postgres
       APP_CONFIG_BACKEND: backstage:7007
       APP_CONFIG_APP: backstage:7007
-      APICURIO_ENDPOINT: apicurio:8080
-      # APP_CONFIG_catalog_providers_apicurio_url: apicurio:8080
+      APICURIO_ENDPOINT: http://localhost:8080
+      APP_CONFIG_catalog_providers_apicurio_url: http://apicurio:8080
+      APP_CONFIG_backend_reading_allow-host: localhost:8080
     links:
       - db

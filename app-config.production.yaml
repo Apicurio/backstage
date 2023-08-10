@@ -112,7 +112,7 @@ catalog:
     - type: file
       target: ./apicurio/demo.yaml
     - type: file
-      target: ./catalog-info.yaml
+      target: ./apicurio/catalog-info.yaml
   providers:
     apicurio:
-      url: ${APICURIO_ENDPOINT}    
+      url: ${APICURIO_ENDPOINT}
