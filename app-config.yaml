@@ -130,9 +130,12 @@ catalog:
         - allow: [Group]
 
     - type: file
+<<<<<<< HEAD
+=======
       target: ../../apicurio/demo.yaml
     - type: file
-      target: ../../catalog-info.yaml
+>>>>>>> 94925b6 (Fix the documentation generation (#46))
+      target: ../../apicurio/catalog-info.yaml
     ## Uncomment these lines to add more example data
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
