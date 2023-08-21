@@ -1,0 +1,27 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: PNC
+  description: A middleware-oriented build system. The productized builds are executed on PNC. PNC is a secluded build system, similar in nature to Jenkins and Brew, which is responsible for building middleware components.
+  links:
+    - url: http://orch.psi.redhat.com/pnc-web/
+      title: Page
+      icon: web 
+    - url: https://docs.engineering.redhat.com/display/JP/User%27s+guide
+      title: PNC User Guide
+      icon: web 
+    - url: http://project-ncl.github.io/dependency-analysis/users-documentation.html
+      title: Dependency Analyzer
+      icon: web 
+    - url: https://release-engineering.github.io/pom-manipulation-ext/
+      title: POM Manipulation Extension (PME)
+      icon: web    
+  # annotations:
+  #   backstage.io/source-location: url:https://github.com/Apicurio/apicurito
+spec:
+  type: project
+  lifecycle: production
+  owner: eng
+  subcomponentOf : productization
+  # system: upstream

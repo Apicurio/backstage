@@ -1,0 +1,25 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Comet
+  description: Comet is a web-based interface for managing product and container image metadata presented within the Red Hat Container Catalog.
+  links:
+    - url: https://comet.engineering.redhat.com/dashboard
+      title: Page
+      icon: web 
+    - url: https://comet.engineering.redhat.com/ 
+      title: Production
+      icon: web 
+    - url: https://comet.stage.engineering.redhat.com/ 
+      title: Stage
+      icon: web 
+    - url: https://docs.google.com/document/d/1oLzKgCXblERauGj2r3_WI-um69jXZfZ9O8pPLambYRQ/edit#
+      title: User Guide
+      icon: web   
+spec:
+  type: project
+  lifecycle: production
+  owner: eng
+  subcomponentOf : productization
+  # system: upstream

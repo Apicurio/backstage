@@ -1,0 +1,18 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: OSBS
+  description: OpenShift Build System is the Brew backend responsible for building productized docker images and rpm packages.
+  links:
+    - url: https://osbs.readthedocs.io/en/latest/index.html
+      title: OSBS User Guide
+      icon: web 
+   # annotations:
+  #   backstage.io/source-location: url:https://github.com/Apicurio/apicurito
+spec:
+  type: project
+  lifecycle: production
+  owner: eng
+  subcomponentOf : productization
+  # system: upstream

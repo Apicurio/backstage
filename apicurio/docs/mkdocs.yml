@@ -5,6 +5,17 @@ nav:
   - Quality Engineering Systems: qe.md
   - Google Drive Resources: gdrive.md
   - Doc Systems: DocSystems.md
+  - Productization:
+    - Introduction: Productization/Introduction.md
+    - Brew: Productization/brew.md
+    - Errata: Productization/errata.md
+    - Dist-Git: Productization/distgit.md
+    - PNC: Productization/pnc.md
+    - Comet: Productization/comet.md
+    - OSBS: Productization/osbs.md
+    - UMB: Productization/umb.md
+    - code.engineering: Productization/gerrit.md
+
 
 plugins:
   - techdocs-core

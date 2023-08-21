@@ -107,6 +107,42 @@ catalog:
       rules:
       - allow: [Component, System, API, Resource, Location]
     - type: file
+      target: ../../apicurio/sw/productization.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/gerrit.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/distGit.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/osbs.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/pnc.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/umb.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/errata.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/comet.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
+      target: ../../apicurio/sw/brew.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
       target: ../../apicurio/sw/systems/upstream.yaml
       rules:
       - allow: [Component, System, API, Resource, Location]
@@ -124,10 +160,8 @@ catalog:
     - type: file
       target: ../../apicurio/org/groups.yaml
       rules:
-        - allow: [Group]
-
-    - type: file
-      target: ../../apicurio/demo.yaml
+        - allow: [Group] 
+        
     - type: file
       target: ../../apicurio/catalog-info.yaml
     ## Uncomment these lines to add more example data
