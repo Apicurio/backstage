@@ -4,7 +4,6 @@ nav:
   - Overview: index.md
   - Quality Engineering Systems: qe.md
   - Google Drive Resources: gdrive.md
-  - Doc Systems: DocSystems.md
   - Productization:
     - Introduction: Productization/Introduction.md
     - Brew: Productization/brew.md
@@ -16,7 +15,5 @@ nav:
     - UMB: Productization/umb.md
     - code.engineering: Productization/gerrit.md
   - Doc Systems: DocSystems.md
-
-
 plugins:
   - techdocs-core
