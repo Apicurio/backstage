@@ -1,0 +1,10 @@
+site_name: 'Apicurio Documentation'
+
+nav:
+  - Overview: index.md
+  - Quality Engineering Systems: qe.md
+  - Google Drive Resources: gdrive.md
+  - Doc Systems: DocSystems.md
+
+plugins:
+  - techdocs-core
