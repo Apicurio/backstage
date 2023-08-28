@@ -95,42 +95,7 @@ catalog:
       target: ./apicurio/sw/systems/downstream.yaml
       rules:
       - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/productization.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/gerrit.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/distGit.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/osbs.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/pnc.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/umb.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/errata.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/comet.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
-    - type: file
-      target: ../../apicurio/sw/brew.yaml
-      rules:
-      - allow: [Component, System, API, Resource, Location]
+
     - type: file
       target: ./apicurio/demo.yaml
     - type: file
@@ -147,7 +112,7 @@ catalog:
     - type: file
       target: ./apicurio/demo.yaml
     - type: file
-      target: ./apicurio/catalog-info.yaml
+      target: ./catalog-info.yaml
   providers:
     apicurio:
-      url: ${APICURIO_ENDPOINT}
+      url: ${APICURIO_ENDPOINT}    

@@ -1,3 +1,4 @@
+
 ## Apicurio Registry
 Apicuro Registry docs are based on [AsciiDoc](https://asciidoc.org/) source code and use [Antora site generator](https://antora.org/). to build the user docs for that product.
 * [Apicurio Registry Documentation Guide](https://github.com/Apicurio/apicurio-registry/blob/main/docs/readme.adoc)
