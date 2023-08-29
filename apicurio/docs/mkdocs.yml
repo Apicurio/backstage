@@ -14,6 +14,7 @@ nav:
     - OSBS: Productization/osbs.md
     - UMB: Productization/umb.md
     - code.engineering: Productization/gerrit.md
+  - Doc Systems: DocSystems.md
 
 
 plugins:
