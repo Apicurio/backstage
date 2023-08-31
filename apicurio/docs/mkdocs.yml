@@ -4,6 +4,14 @@ nav:
   - Overview: index.md
   - Quality Engineering Systems: qe.md
   - Google Drive Resources: gdrive.md
+  - Onboarding:
+    - Onboarding Document: Onboarding/onboarding.md
+    - Communication: Onboarding/communication.md
+    - TeamInfo: Onboarding/teaminfo.md
+    - Learning: Onboarding/learning.md
+    - Repositories: Onboarding/repositories.md
+    - Issues: Onboarding/issues.md
+    - Additional Readings: Onboarding/additional.md
   - Productization:
     - Introduction: Productization/Introduction.md
     - Brew: Productization/brew.md
@@ -14,7 +22,6 @@ nav:
     - OSBS: Productization/osbs.md
     - UMB: Productization/umb.md
     - code.engineering: Productization/gerrit.md
-
 
 plugins:
   - techdocs-core
