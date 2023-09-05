@@ -1,6 +1,6 @@
 import { Config } from '@backstage/config';
 import {
-  ApicurioConfig,
+  ApicurioRegistry,
   APICURIO_PREFIX,
 } from '@janus-idp/backstage-plugin-apicurio-common';
 
@@ -27,7 +27,7 @@ const getFromApicurioConfig = (config: Config): Config => {
   return config;
 };
 
-const getHubClusterFromConfig = (config: Config): ApicurioConfig => {
+const getHubClusterFromConfig = (config: Config): ApicurioRegistry => {
   const hub = getFromApicurioConfig(config);
 
   const url = hub.getString('url');
@@ -42,7 +42,7 @@ const getHubClusterFromConfig = (config: Config): ApicurioConfig => {
   };
 };
 
-export const readApicurioConfigs = (config: Config): ApicurioConfig => {
+export const readApicurioConfigs = (config: Config): ApicurioRegistry => {
   const apicurioConfigs = config.getConfig(APICURIO_PREFIX);
   return getHubClusterFromConfig(apicurioConfigs);
 };
