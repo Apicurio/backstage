@@ -37,7 +37,7 @@ export class ApicurioApiImpl implements ApicurioApi {
   private readonly apicurio: Apicurio;
   constructor(options: Options) {
     options.logger.debug(
-      `creating kiali client with url=${options.apicurio.url}`,
+      `creating apicurio client with url=${options.apicurio.url}`,
     );
     this.apicurio = options.apicurio;
     this.logger = options.logger;
