@@ -22,7 +22,7 @@ export const apicurioApiRef = createApiRef<ApicurioApiV1>({
 });
 
 /**
- * Provides A KialiClient class to query backend
+ * Provides an ApicurioClient class to query backend
  */
 export class ApicurioApiClient implements ApicurioApiV1 {
   // @ts-ignore

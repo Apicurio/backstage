@@ -4,6 +4,7 @@ import {
   ArtifactsSearchResults,
   ArtifactDetail,
   ArtifactMetaData,
+  ApicurioRegistry,  
   ApiError,
   Rule,
   SearchedVersionResults,
@@ -13,11 +14,7 @@ import { hasProperty } from '../helpers';
 
 type Options = {
   logger: Logger;
-  apicurio: Apicurio;
-};
-
-export type Apicurio = {
-  url: string;
+  apicurio_registry: ApicurioRegistry;
 };
 
 export interface ApicurioApi {
@@ -34,12 +31,12 @@ const registryAPI = 'apis/registry/v2';
 
 export class ApicurioApiImpl implements ApicurioApi {
   private readonly logger: Logger;
-  private readonly apicurio: Apicurio;
+  private readonly apicurio: ApicurioRegistry;
   constructor(options: Options) {
     options.logger.debug(
-      `creating kiali client with url=${options.apicurio.url}`,
+      `creating apicurio client with url=${options.apicurio_registry.url}`,
     );
-    this.apicurio = options.apicurio;
+    this.apicurio = options.apicurio_registry;
     this.logger = options.logger;
   }
 

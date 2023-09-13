@@ -91,9 +91,9 @@ export async function createRouter(
 
   logger.info('Initializing Apicurio backend');
 
-  const apicurio = readApicurioConfigs(config);
+  const apicurio_registry = readApicurioConfigs(config);
 
-  const apicurioAPI = new ApicurioApiImpl({ logger, apicurio });
+  const apicurioAPI = new ApicurioApiImpl({ logger, apicurio_registry });
 
   return makeRouter(logger, apicurioAPI);
 }
