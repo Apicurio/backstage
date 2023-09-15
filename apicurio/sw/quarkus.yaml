@@ -1,0 +1,30 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Quarkus_Extension
+  description: Apicurio Registry - Avro. Provide support for the Apicurio Registry Avro library.
+  links:
+    - url: https://quarkus.io/extensions/io.quarkus/quarkus-apicurio-registry-avro
+      title: Page
+      icon: dashboard
+    - url: https://quarkus.io/guides/kafka-schema-registry-avro
+      title: Documentation
+      icon: web
+    - url: https://code.quarkus.io/?e=apicurio-registry-avro
+      title: Try the extension
+      icon: web
+    - url: https://central.sonatype.com/artifact/io.quarkus/quarkus-apicurio-registry-avro/3.4.0.CR1/jar
+      title: Repository
+      icon: web
+    - url: https://github.com/quarkusio/quarkus/issues
+      title: Issues
+      icon: web
+
+  annotations:
+    backstage.io/source-location: url:https://github.com/quarkusio/quarkus
+spec:
+  type: project
+  lifecycle: production
+  owner: eng
+  system: upstream

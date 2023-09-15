@@ -23,6 +23,7 @@ nav:
     - UMB: Productization/umb.md
     - code.engineering: Productization/gerrit.md
   - Doc Systems: DocSystems.md
+  - Quarkus Installation: quarkus.md
 
 plugins:
   - techdocs-core

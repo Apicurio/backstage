@@ -143,6 +143,10 @@ catalog:
       rules:
       - allow: [Component, System, API, Resource, Location]
     - type: file
+      target: ../../apicurio/sw/quarkus.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
       target: ../../apicurio/sw/systems/upstream.yaml
       rules:
       - allow: [Component, System, API, Resource, Location]
@@ -162,6 +166,8 @@ catalog:
       rules:
         - allow: [Group] 
         
+    - type: file
+      target: ../../apicurio/demo.yaml
     - type: file
       target: ../../apicurio/catalog-info.yaml
     ## Uncomment these lines to add more example data
