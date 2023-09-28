@@ -132,6 +132,10 @@ catalog:
       rules:
       - allow: [Component, System, API, Resource, Location]
     - type: file
+      target: ../../apicurio/sw/quarkus.yaml
+      rules:
+      - allow: [Component, System, API, Resource, Location]
+    - type: file
       target: ./apicurio/demo.yaml
     - type: file
       target: ./apicurio/org/users.yaml
